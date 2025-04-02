@@ -18,7 +18,7 @@ const TabIcon = ({ focused, icon, title }: any) => {
                 tintColor="#151312" className="size-5" />
                 <Text className="text-secondary text-base font-semibold ml-2">{title}</Text>
             </ImageBackground>
-        )
+        );
     }
 
     return (
@@ -29,10 +29,10 @@ const TabIcon = ({ focused, icon, title }: any) => {
                 className="size-5"
             />
         </View>
-    )
+    );
 }
 
-const _Layout = () => {
+export default function TabsLayout() {
     return (
         <Tabs
             screenOptions={{
@@ -112,7 +112,5 @@ const _Layout = () => {
                 }}
             />
         </Tabs>
-    )
+    );
 }
-
-export default _Layout
